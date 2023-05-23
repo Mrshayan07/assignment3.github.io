@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <textarea  id="area1" style="height: 200px;"></textarea>
-    <textarea id="area2" style="height: 200px;"></textarea><br>
+    <textarea  id="area1"  style="height: 200px;"></textarea>
+    <textarea id="area2"  style="height: 200px;"></textarea><br>
     <button onclick="Upper()">Upper Case</button>
     <button onclick="Lower()" style="margin-left: 100px;">Lower Case</button>
-    <button onclick="clear">clear</button>
+    <button onclick="Delete()">clear</button>
     <script>
         function Upper(){
       let  a = document.getElementById("area1").value;
@@ -22,7 +22,13 @@
       let  a = document.getElementById("area1").value;
         uppercasevalue = a.toLowerCase();
         document.getElementById("area2").innerText=uppercasevalue;
+        //document.getElementById("area2").value="";
         }
+        function Delete(){
+         document.getElementById("area2").value="";
+         
+        }
+       
         </script>
 </body>
 </html>
