@@ -24,6 +24,7 @@
     <button  onclick="sub()" style="background-color:rgb(0, 255, 42);">sub</button>
     <button  onclick="mult()" style="background-color:blue ;">mult</button>
     <button  onclick="divide()" style="background-color:rgb(0, 255, 234);">divide</button>
+    <button onclick="Delete()">Clear</button>
     <script>
 function add(){
    let a = parseInt( document.getElementById("user1").value);
@@ -45,6 +46,10 @@ function divide(){
     let i = document.getElementById("user1").value;
     let  v= document.getElementById("user2").value;
     document.getElementById("div").innerText = i/v;
+}
+function Delete(){
+    document.getElementById("user1").value="";
+    document.getElementById("user2").value="";
 }
     </script>
 </body>
